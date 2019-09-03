@@ -106,13 +106,26 @@ python3 setup.py build_ext --inplace
 python3 pep.py
 nano config.ini
 ```
-* lets
-```
-sudo pip3 install -r requirements.txt
-python3 setup.py build_ext --inplace
-python3 lets.py
+### lets
+```bash
+git clone https://zxq.co/ripple/lets.git path
+
+git submodules init
+git submodules update
+
+# Workaround for git submodules in case they are not working or you don't have access
+git clone https://zxq.co/ripple/ripple-python-common.git path/common
+git clone https://github.com/osufx/secret path/secret
+git clone https://github.com/Francesco149/oppai-ng.git path/pp/opai-ng
+git clone https://zxq.co/ripple/catch-the-pp.git path/pp/catch_the_pp
+#git clone git@zxq.co:ripple/maniapp-osu-tools.git path/calc-no-replay
+
+pip3 install -r requirements.txt
+python3 path/setup.py build_ext --inplace
+python3 pathlets.py
 nano config.ini
 ```
+
 ### hanayo
 ```bash
 go get -u zxq.co/ripple/hanayo
