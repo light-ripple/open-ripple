@@ -99,9 +99,18 @@ https://github.com/osufx/national-gallery
 https://github.com/osufx/secret
 https://github.com/osufx/ripple-python-common
 ```
-* pep.py
-```
-sudo pip3 install -r requirements.txt
+### pep.py
+**WARNING**: !(Deprecated 26th June 2019)[https://zxq.co/ripple/pep.py/src/branch/master/README.md]
+
+```bash
+# Fetch sources
+git clone https://zxq.co/ripple/pep.py.git path
+git clone https://zxq.co/ripple/ripple-python-common.git path/common
+
+# Install dependencies
+pip3 install -r requirements.txt
+
+# Runtime
 python3 setup.py build_ext --inplace
 python3 pep.py
 nano config.ini
